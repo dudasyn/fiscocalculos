@@ -4,22 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <Button
-        android:id="@+id/btrbt12"
-        android:layout_width="98dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="228dp"
-        android:layout_marginRight="228dp"
-        android:text="% RBT12"
+
+    <ImageButton
+        android:id="@+id/ib_simples"
+        android:layout_width="93dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="44dp"
+        android:adjustViewBounds="true"
+        android:background="#000000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/simples_nacional"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/tv_simples"
+        android:layout_width="56dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:text="Simples"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_simples" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="402dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:srcCompat="@drawable/logo_caxias" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

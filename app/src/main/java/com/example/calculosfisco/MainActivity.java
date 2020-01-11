@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button rbtButton;
+    //Button simplesImgButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        rbtButton = (Button)findViewById(R.id.btrbt12);
+        //rbtButton = (Button)findViewById(R.id.btrbt12);
 
-        rbtButton.setOnClickListener(new btRBT12Clicked());
+        //rbtButton.setOnClickListener(new btRBT12Clicked());
 
 
 
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+/*
     class btRBT12Clicked implements Button.OnClickListener{
         @Override
         public void onClick(View v) {
@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+    */
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
